@@ -1,0 +1,182 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Font Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #003366;
+    padding: 1em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    color: #fff;
+    font-size: 1.5em;
+}
+
+nav .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5em;
+}
+
+nav .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('college-campus.jpg'); /* Add your own image */
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+}
+
+.hero .btn {
+    background-color: #ff6600;
+    padding: 0.75em 1.5em;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* About Section */
+.about {
+    padding: 2em;
+    text-align: center;
+    background-color: #fff;
+    margin: 2em 0;
+}
+
+.about h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+/* Academics Section */
+.academics {
+    padding: 2em;
+    background-color: #f4f4f4;
+}
+
+.academic-programs {
+    display: flex;
+    justify-content: space-around;
+}
+
+.academic-programs .program {
+    background-color: #fff;
+    padding: 1em;
+    border-radius: 5px;
+    width: 30%;
+    text-align: center;
+}
+
+/* Events Section */
+.events {
+    padding: 2em;
+    text-align: center;
+    background-color: #fff;
+}
+
+.events h2 {
+    margin-bottom: 1em;
+}
+
+.events .event-list {
+    list-style: none;
+}
+
+.events .event-list li {
+    margin-bottom: 0.5em;
+}
+
+/* Contact Section */
+.contact {
+    padding: 2em;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact label {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 0.75em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact button {
+    padding: 0.75em 2em;
+    background-color: #003366;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: #003366;
+    padding: 1em;
+    text-align: center;
+    color: #fff;
+    margin-top: 2em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .academic-programs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .academic-programs .program {
+        width: 80%;
+        margin-bottom: 1.5em;
+    }
+}
